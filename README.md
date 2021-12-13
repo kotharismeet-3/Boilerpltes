@@ -94,6 +94,17 @@ task fails.
 negotiating the first container from the resource manager. It also restarts the
 Application Manager container if a task fails.
 
+>Capacity Scheduler :-  Here a separate dedicated queue allows the small job to start as soon
+as it is submitted, although this is at the cost of overall cluster
+utilization since the queue capacity is reserved for jobs in that queue.
+This means that the large job finishes later than when using the FIFO
+Scheduler
+
+> Fair  Scheduler :- Here there is no need to reserve a set amount of capacity, since it will
+dynamically balance resources between all running jobs. Just after the
+first (large) job starts, it is the only job running, so it gets all the
+resources in the cluster
+
 ## Hadoop
 
 ### HDFS
@@ -122,7 +133,40 @@ Application Manager container if a task fails.
 2. [When executing Hive Queries in different directories, why is metastore_db created in all places from where hive is luanched?](https://www.projectpro.io/article/hive-interview-questions-and-answers-for-2018/246#:~:text=10)
 ## Spark
 
+Fast expensive cluster computing system.<br>
+>Spark contains Resilient Distributed Datasets (RDDs) that save the
+time taken in reading and writing operations, and hence it runs
+almost 10–100 times faster than Hadoop.
+
+>DAG is the scheduling layer of the Apache Spark architecture that
+implements stage-oriented scheduling. Compared to MapReduce
+that creates a graph in two stages, Map and Reduce, Apache Spark
+can create DAGs that contain many stages.
+
+Key features :  FIRFCB
+
+Iterative operations on MR vs spark.<br>
+Interactive " <br>
+API Support in Scala, Python
+
+1. [The way we have spark shell and PySpark shell it is possible to have such shell in Map Reduce? if not specify the reason. How is Mlibb library different than ML Library different in Spark?]()
+2. [What are various data sources available ib Spark SQL? Why is there need for broadcast variables when working with Apache Spark?]()
+3. [What are transformation in RDD? How is narrow transformation different than wide transformation]()
+4. [What do you underrstand by SchemaRDD and Apache Spark RDD? How spark is different from HQl and SQL?]()
 ## Casandra
+
+Column Oriented database, based on Amazon's DynamoDB and model on Google's BigData, created at Facebook.<br>
+Fault tolerant due to replication factor.<br>
+CQL treats the database as KeySpaces as container of table.<br>
+>Write operations :- it is captured by the commit logs, later data will be captured in memtable. Whenever memtable is full, data will be written into the SStable file.
+
+> Read Operations :- gets value from mem-table and check bloom filter to find appropriate SStable.
+
+> Column is basic data structure of cassandra with three values name,value & timestamp.
+
+> Super column is name , ```map<timestamp,column>```
+
+
 
 ## Zokeeper
 Co-ordinator
