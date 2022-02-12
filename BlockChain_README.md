@@ -105,5 +105,21 @@ which is stable coin.
 - [ ] 43 > [Casper](https://www.youtube.com/watch?v=GAywmwGToUI)
 - [ ] 44 > [Hydra with Cardano](https://iohk.io/en/research/library/papers/hydrafast-isomorphic-state-channels/)
 
+### Defi Knowledge
+
+- [ ] 50 > [Defi](https://www.youtube.com/watch?v=o9ObYRjpIhs)
+- [ ] 51 > [Aoutmated Market Maker in Liquidity Pool](https://www.youtube.com/watch?v=1PbZMudPP5E))
+- [ ] 52 > [AAVE](https://www.youtube.com/watch?v=dTCwssZ116A)
+- [ ] 53 > [Basic Attention Token]()
+- [ ] 54 > [UnicakeSwap](https://www.youtube.com/watch?v=DLu35sIqVTM)
+- [ ] 55 > [Defi 2.0](Defi 2.0(https://www.youtube.com/watch?v=I34lOvUWsNc)
+- [ ] 56 > [DAO](https://www.youtube.com/watch?v=KHm0uUPqmVE)
+- [ ] 57 > [OlympusDAO](https://www.youtube.com/watch?v=o699i_l_qy8)
+
+### Wrapped Tokens
+
+- [ ] 58 > [Wrapped Tokens over Solona (ERC1155)](https://www.youtube.com/watch?v=DuwQ6NuPQp4)
+
+
 
 
